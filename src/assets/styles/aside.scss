@@ -1,3 +1,5 @@
+$margin-left: 30px;
+
 aside.leftbar {
     width: $aside-width;
     height: 100%;
@@ -5,9 +7,19 @@ aside.leftbar {
     left: 0;
     position: fixed;
     background-color: $submain-background;
+    
     .subheader {
         width: 100%;
         height: $header-height;
         border-bottom: 1px solid rgba(216,216,216,.1);
+        
+        h1.name {
+            font-size: 22px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 32px;
+            margin-left: $margin-left;
+        }
     }
 }
