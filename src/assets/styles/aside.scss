@@ -18,8 +18,9 @@ aside.leftbar {
             font-weight: 600;
             color: #fff;
             text-transform: uppercase;
-            line-height: 32px;
-            margin-left: $margin-left;
+            line-height: $header-height;
+            margin: 0 0 0 $margin-left;
         }
     }
+    ul.mainmenu {}
 }
