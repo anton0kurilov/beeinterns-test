@@ -5,4 +5,8 @@ aside.leftbar {
     left: 0;
     position: fixed;
     background-color: $submain-background;
+    .subheader {
+        width: 100%;
+        height: $header-height;
+    }
 }
