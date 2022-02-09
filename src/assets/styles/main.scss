@@ -9,6 +9,9 @@ $main-background: #2f303d;
 @import "body";
 
 body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Jost', 'Helvetica', 'Arial', sans-serif;
     background-color: $main-background;
 }
 
