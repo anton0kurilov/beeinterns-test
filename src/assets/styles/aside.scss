@@ -22,5 +22,9 @@ aside.leftbar {
             margin: 0 0 0 $margin-left;
         }
     }
-    ul.mainmenu {}
+    ul.mainmenu, ul.submenu {
+        padding: 0 0 0 $margin-left;
+        margin: 0;
+        list-style-type: none;
+    }
 }
