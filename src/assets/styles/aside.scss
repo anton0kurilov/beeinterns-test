@@ -1,7 +1,8 @@
-aside {
+aside.leftbar {
     width: $aside-width;
     height: 100%;
     top: 0;
     left: 0;
+    position: fixed;
     background-color: $submain-background;
 }
