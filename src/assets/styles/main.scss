@@ -1,1 +1,9 @@
+$aside-width: 280px;
+$submain-background: #343646;
+$main-background: #2f303d;
+
+@import "header";
+@import "aside";
+@import "body";
+
 body {}
