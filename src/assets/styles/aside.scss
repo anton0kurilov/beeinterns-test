@@ -24,13 +24,14 @@ aside.leftbar {
     }
 
     ul.mainmenu, ul.submenu {
-        padding: 0 0 0 $margin-left;
+        padding: 0;
         margin: 0;
         list-style-type: none;
         text-transform: uppercase;
 
         li {
-            width:100%;
+            width: calc(100% - $margin-left);
+            padding-left: $margin-left;
             height: 40px;
             line-height: 40px;
             color: #fff;
@@ -40,7 +41,7 @@ aside.leftbar {
                 color: #fff;
             }
 
-            &:hover {
+            .this, &:hover {
                 background-color: #383a4a;
             }
         }
