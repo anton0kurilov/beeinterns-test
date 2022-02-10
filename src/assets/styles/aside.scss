@@ -57,7 +57,6 @@ aside.leftbar {
                 color: #fff;
                 text-transform: uppercase;
                 margin: 0;
-                // margin: 0 0 0 $margin-left;
             }
         }
     }
@@ -67,15 +66,14 @@ aside.leftbar {
         padding: 0;
         margin: 0;
         list-style-type: none;
-        text-transform: uppercase;
 
         li {
             width: calc(100% - $margin-left);
-            padding-left: $margin-left;
-            height: 40px;
             line-height: 40px;
             color: #fff;
+            text-transform: uppercase;
             transition: all .5s;
+            cursor: pointer;
 
             a {
                 color: #fff;
@@ -91,6 +89,17 @@ aside.leftbar {
     ul.mainmenu {
         margin: 30px 0;
         max-height: 80%;
+
+        li {
+            padding-left: $margin-left;
+        }
+    }
+
+    ul.submenu {
+        li {
+            margin-left: -$margin-left;
+            padding-left: calc($margin-left * 2);
+        }
     }
 
     section.newsletter-form {
