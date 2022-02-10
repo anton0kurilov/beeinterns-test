@@ -105,12 +105,14 @@ aside.leftbar {
     ul.submenu {
         li {
             margin-left: -$margin-left;
-            padding-left: calc($margin-left * 2);
-            transition: all 1s;
+            padding-left: calc($margin-left * 2 - 3px);
+            transition: all .5s;
+            border-left: 3px solid transparent;
 
             .this,
             &:hover {
                 background-color: #383a4a;
+                border-left: 3px solid #6f6eff;
             }
         }
     }
