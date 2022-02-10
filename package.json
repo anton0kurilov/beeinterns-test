@@ -1,8 +1,10 @@
 {
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.0",
     "parcel": "^2.2.1",
+    "parcel-plugin-nuke-dist": "^1.0.1",
     "sass": "^1.49.7"
-  }, 
+  },
   "scripts": {
     "start": "parcel src/index.html",
     "dev": "parcel src/index.html",
