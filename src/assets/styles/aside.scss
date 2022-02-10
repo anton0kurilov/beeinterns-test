@@ -78,11 +78,6 @@ aside.leftbar {
             a {
                 color: #fff;
             }
-
-            .this,
-            &:hover {
-                background-color: #383a4a;
-            }
         }
     }
 
@@ -93,12 +88,30 @@ aside.leftbar {
         li {
             padding-left: $margin-left;
         }
+
+        ul#subprograms,
+        input#subprograms,
+        ul#sublections,
+        input#sublections {
+            display: none;
+        }
+
+        input#subprograms:checked~ul#subprograms,
+        input#sublections:checked~ul#sublections {
+            display: block;
+        }
     }
 
     ul.submenu {
         li {
             margin-left: -$margin-left;
             padding-left: calc($margin-left * 2);
+            transition: all 1s;
+
+            .this,
+            &:hover {
+                background-color: #383a4a;
+            }
         }
     }
 
