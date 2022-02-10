@@ -90,10 +90,14 @@ aside.leftbar {
     }
 
     section.newsletter-form {
-        padding: 30px;
+        padding: $margin-left;
+        width: calc(100% - $margin-left * 2) ;
         color: #fff;
+        position: absolute;
+        bottom: 0;
 
         form {
+            position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
