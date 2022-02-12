@@ -109,10 +109,24 @@ aside.leftbar {
             transition: all .5s;
             border-left: 3px solid transparent;
 
+
+            a {
+                display: flex;
+                align-items: center;
+                color: #778090;
+
+                .this,
+                &:hover {
+                    color: #fff;
+                }
+
+            }
+
             .this,
             &:hover {
                 background-color: #383a4a;
                 border-left: 3px solid #6f6eff;
+                color: #fff;
             }
         }
     }
