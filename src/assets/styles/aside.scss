@@ -1,6 +1,6 @@
 $margin-left: 30px;
 
-aside.leftbar {
+aside.aside {
     width: $aside-width;
     height: 100%;
     top: 0;
@@ -8,13 +8,13 @@ aside.leftbar {
     position: fixed;
     background-color: $submain-background;
 
-    .subheader {
+    div.aside__header {
         position: relative;
         width: 100%;
         height: $header-height;
         border-bottom: 1px solid rgba(216, 216, 216, .1);
 
-        .container {
+        div.aside__header-container {
             width: 138px;
             position: absolute;
             top: 50%;
@@ -22,36 +22,36 @@ aside.leftbar {
             height: auto;
             margin-left: $margin-left;
 
-            .subs {
+            div.aside__header-subs {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 margin: 0 0 2px 0;
 
-                sub.year {
+                sub.aside__header-year {
                     color: #fff;
                     font-size: 10px;
                 }
 
-                div.beeline {
+                div.aside__header-beeline {
                     display: flex;
                     align-items: center;
 
-                    sub.beelinebrand {
+                    sub.aside__header-beeline-name {
                         color: #fff;
                         font-size: 10px;
                         margin-left: 5px;
                         text-transform: lowercase;
                     }
 
-                    img.beelinelogo {
+                    img.aside__header-beeline-logo {
                         height: 7.5px;
                         width: 7.5px;
                     }
                 }
             }
 
-            h1.name {
+            h1.aside_header-pagename {
                 font-size: 22px;
                 font-weight: 600;
                 color: #fff;
@@ -67,7 +67,8 @@ aside.leftbar {
         margin: 0;
         list-style-type: none;
 
-        li {
+        li.mainmenu__item,
+        li.submenu__item {
             width: calc(100% - $margin-left);
             line-height: 40px;
             color: #fff;
@@ -85,7 +86,7 @@ aside.leftbar {
         margin: 30px 0;
         max-height: 80%;
 
-        li {
+        li.mainmenu__item {
             padding-left: $margin-left;
         }
 
@@ -103,7 +104,7 @@ aside.leftbar {
     }
 
     ul.submenu {
-        li {
+        li.submenu__item {
             margin-left: -$margin-left;
             padding-left: calc($margin-left * 2 - 3px);
             transition: all .5s;
@@ -131,14 +132,14 @@ aside.leftbar {
         }
     }
 
-    section.newsletter-form {
+    section.aside__newsletter {
         padding: $margin-left;
         width: calc(100% - $margin-left * 2);
         color: #fff;
         position: absolute;
         bottom: 0;
 
-        form {
+        form.aside__newsletter-form {
             position: relative;
             display: flex;
             justify-content: space-between;

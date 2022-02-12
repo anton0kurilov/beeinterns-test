@@ -11,58 +11,59 @@
 </head>
 
 <body>
-    <aside class="leftbar">
-        <div class="subheader">
+    <aside class="aside">
+        <div class="aside__header">
             <a href="/">
-                <div class="container">
-                    <div class="subs">
-                        <div class="beeline">
-                            <img src="/src/assets/images/leftbar/beelinelogo.svg" class="beelinelogo" draggable="false">
-                            <sub class="beelinebrand">билайн</sub>
+                <div class="aside__header-container">
+                    <div class="aside__header-subs">
+                        <div class="aside__header-beeline">
+                            <img src="/src/assets/images/leftbar/beelinelogo.svg" class="aside__header-beeline-logo"
+                                draggable="false">
+                            <sub class="aside__header-beeline-name">билайн</sub>
                         </div>
-                        <sub class="year">2022</sub>
+                        <sub class="aside__header-year">2022</sub>
                     </div>
-                    <h1 class="name">Beeinterns</h1>
+                    <h1 class="aside_header-pagename">Beeinterns</h1>
                 </div>
             </a>
         </div>
         <ul class="mainmenu">
-            <li>
+            <li class="mainmenu__item">
                 <input type="checkbox" id="subprograms">
                 <label for="subprograms" id="subprograms">Программа</label>
                 <ul class="submenu" id="subprograms">
-                    <li><a href="" title="">HTML/CSS</a></li>
-                    <li><a href="" title="">GIT</a></li>
-                    <li><a href="" title="">JavaScript</a></li>
-                    <li><a href="" title="">React</a></li>
-                    <li><a href="" title="">Angular</a></li>
-                    <li><a href="" title="">Data</a></li>
+                    <li class="submenu__item"><a href="" title="">HTML/CSS</a></li>
+                    <li class="submenu__item"><a href="" title="">GIT</a></li>
+                    <li class="submenu__item"><a href="" title="">JavaScript</a></li>
+                    <li class="submenu__item"><a href="" title="">React</a></li>
+                    <li class="submenu__item"><a href="" title="">Angular</a></li>
+                    <li class="submenu__item"><a href="" title="">Data</a></li>
                 </ul>
             </li>
-            <li><a href="">Менторы</a></li>
-            <li>
+            <li class="mainmenu__item"><a href="">Менторы</a></li>
+            <li class="mainmenu__item">
                 <input type="checkbox" id="sublections">
                 <label for="sublections" id="sublections">Лекции</label>
                 <ul class="submenu" id="sublections">
                     <li class="this"><a href="" title="">HTML/CSS</a></li>
-                    <li><a href="" title="">GIT</a></li>
-                    <li><a href="" title="">JavaScript</a></li>
-                    <li><a href="" title="">React</a></li>
-                    <li><a href="" title="">Angular</a></li>
-                    <li><a href="" title="">Data</a></li>
+                    <li class="submenu__item"><a href="" title="">GIT</a></li>
+                    <li class="submenu__item"><a href="" title="">JavaScript</a></li>
+                    <li class="submenu__item"><a href="" title="">React</a></li>
+                    <li class="submenu__item"><a href="" title="">Angular</a></li>
+                    <li class="submenu__item"><a href="" title="">Data</a></li>
                 </ul>
             </li>
         </ul>
-        <div class="separator"></div>
-        <section class="newsletter-form">
-            <form>
+        <div class="divider"></div>
+        <section class="aside__newsletter">
+            <form class="aside__newsletter-form">
                 <label for="newsletter-checkbox">Получать рассылку</label>
                 <input type="checkbox" id="newsletter-checkbox" name="subscribe" value="newsletter">
             </form>
         </section>
     </aside>
-    <header class="topbar"></header>
-    <main></main>
+    <header class="header"></header>
+    <main class="pagebody"></main>
 </body>
 
 </html>
