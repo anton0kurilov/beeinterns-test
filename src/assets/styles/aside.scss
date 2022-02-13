@@ -88,17 +88,21 @@ aside.aside {
 
         li.mainmenu__item {
             padding-left: $margin-left;
+
+            label {
+                cursor: pointer;
+            }
         }
 
-        ul#subprograms,
-        input#subprograms,
-        ul#sublections,
-        input#sublections {
+        ul#submenu__programs,
+        input#submenu__programs,
+        ul#submenu__lections,
+        input#submenu__lections {
             display: none;
         }
 
-        input#subprograms:checked~ul#subprograms,
-        input#sublections:checked~ul#sublections {
+        input#submenu__programs:checked~ul#submenu__programs,
+        input#submenu__lections:checked~ul#submenu__lections {
             display: block;
         }
     }
@@ -119,8 +123,21 @@ aside.aside {
                 .this,
                 &:hover {
                     color: #fff;
+
+                    &>object.submenu__item-icon {
+                        fill: #6f6eff;
+                    }
                 }
 
+                object.submenu__item-icon {
+                    width: 18px;
+                    height: 20px;
+                    margin-right: 25px;
+                    display: inline-block;
+                    background-position: center center;
+                    background-size: 15px 18px;
+                    background-size: cover;
+                }
             }
 
             .this,
