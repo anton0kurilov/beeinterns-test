@@ -91,6 +91,13 @@ aside.aside {
 
             label {
                 cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .mainmenu__item-arrow {
+                margin-right: $margin-left;
+                transform: rotate(180deg);
             }
         }
 
@@ -105,6 +112,7 @@ aside.aside {
         input#submenu__lections:checked~ul#submenu__lections {
             display: block;
         }
+
     }
 
     ul.submenu {
