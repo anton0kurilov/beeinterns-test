@@ -75,6 +75,8 @@ aside.aside {
             text-transform: uppercase;
             transition: all .5s;
             cursor: pointer;
+            white-space: nowrap;
+            overflow: hidden;
 
             a {
                 color: #fff;
@@ -87,7 +89,8 @@ aside.aside {
         max-height: 80%;
 
         li.mainmenu__item {
-            padding-left: $margin-left;
+            padding-left: $margin-left - 3px;
+            border-left: 3px solid transparent;
 
             label {
                 cursor: pointer;
@@ -97,7 +100,22 @@ aside.aside {
 
             .mainmenu__item-arrow {
                 margin-right: $margin-left;
+                transition: all .5s;
                 transform: rotate(180deg);
+                cursor: pointer;
+            }
+
+            .this,
+            &:hover {
+                background-color: #383a4a;
+                border-left: 3px solid #6f6eff;
+                color: #fff;
+
+                &>ul.submenu>li.submenu__item {
+                    background-color: $submain-background;
+                    border-left: 3px solid transparent;
+                    color: #778090;
+                }
             }
         }
 
@@ -111,6 +129,10 @@ aside.aside {
         input#submenu__programs:checked~ul#submenu__programs,
         input#submenu__lections:checked~ul#submenu__lections {
             display: block;
+        }
+
+        input#submenu__programs:checked~label .mainmenu__item-arrow {
+            transform: rotate(0deg);
         }
 
     }
@@ -132,9 +154,7 @@ aside.aside {
                 &:hover {
                     color: #fff;
 
-                    &>object.submenu__item-icon {
-                        fill: #6f6eff;
-                    }
+                    &>object.submenu__item-icon {}
                 }
 
                 object.submenu__item-icon {
@@ -150,9 +170,9 @@ aside.aside {
 
             .this,
             &:hover {
-                background-color: #383a4a;
-                border-left: 3px solid #6f6eff;
-                color: #fff;
+                background-color: #383a4a !important;
+                border-left: 3px solid #6f6eff !important;
+                color: #fff !important;
             }
         }
     }
