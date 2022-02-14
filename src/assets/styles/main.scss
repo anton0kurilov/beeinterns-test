@@ -11,6 +11,11 @@ $subfont-color: #778090;
 @import "aside";
 @import "pagebody";
 
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
     padding: 0;
     margin: 0;

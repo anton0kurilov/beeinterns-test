@@ -121,16 +121,24 @@ $margin-left: 30px;
 
         /* submenu collapsing styles */
 
-        ul#submenu__programs,
         input#submenu__programs,
-        ul#submenu__lections,
         input#submenu__lections {
             display: none;
         }
 
+        ul#submenu__programs,
+        ul#submenu__lections {
+            visibility: hidden;
+            height: 0;
+            opacity: 0;
+            transition: visibility 0s, opacity .5s linear;
+        }
+
         input#submenu__programs:checked~ul#submenu__programs,
         input#submenu__lections:checked~ul#submenu__lections {
-            display: block;
+            visibility: visible;
+            height: auto;
+            opacity: 1;
         }
 
         input#submenu__programs:checked~label .mainmenu__item-arrow,
