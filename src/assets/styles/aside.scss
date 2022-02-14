@@ -131,7 +131,8 @@ aside.aside {
             display: block;
         }
 
-        input#submenu__programs:checked~label .mainmenu__item-arrow {
+        input#submenu__programs:checked~label .mainmenu__item-arrow,
+        input#submenu__lections:checked~label .mainmenu__item-arrow {
             transform: rotate(0deg);
         }
 
