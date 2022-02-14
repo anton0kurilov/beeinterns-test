@@ -77,10 +77,10 @@ $margin-left: 30px;
             cursor: pointer;
             white-space: nowrap;
             overflow: hidden;
+        }
 
-            a {
-                color: #fff;
-            }
+        a {
+            color: #fff;
         }
     }
 
@@ -111,7 +111,7 @@ $margin-left: 30px;
                 border-left: 3px solid $accent-color-purple;
                 color: #fff;
 
-                &>ul.submenu>li.submenu__item {
+                &>ul.submenu>a>li.submenu__item {
                     background-color: $submain-background;
                     border-left: 3px solid transparent;
                     color: $subfont-color;
@@ -142,35 +142,36 @@ $margin-left: 30px;
     }
 
     .submenu {
-        &__item {
+
+        .submenu__item {
             margin-left: -$margin-left;
             padding-left: calc($margin-left * 2 - 3px);
             transition: all .5s;
             border-left: 3px solid transparent;
+            display: flex;
+            align-items: center;
 
+            .this,
+            &:hover {
+                color: #fff;
+
+                &>object.submenu__item-icon {}
+            }
 
             a {
-                display: flex;
-                align-items: center;
                 color: $subfont-color;
-
-                .this,
-                &:hover {
-                    color: #fff;
-
-                    &>object.submenu__item-icon {}
-                }
-
-                .submenu__item-icon {
-                    width: 18px;
-                    height: 20px;
-                    margin-right: 25px;
-                    display: inline-block;
-                    background-position: center center;
-                    background-size: 15px 18px;
-                    background-size: cover;
-                }
             }
+
+            .submenu__item-icon {
+                width: 18px;
+                height: 20px;
+                margin-right: 25px;
+                display: inline-block;
+                background-position: center center;
+                background-size: 15px 18px;
+                background-size: cover;
+            }
+
 
             .this,
             &:hover {
@@ -180,6 +181,7 @@ $margin-left: 30px;
             }
         }
     }
+
 
     .aside__newsletter {
         padding: $margin-left;
