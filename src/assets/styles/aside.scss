@@ -67,20 +67,14 @@ $margin-left: 30px;
         margin: 0;
         list-style-type: none;
 
-        &__item,
         &__item {
             width: calc(100% - $margin-left);
             line-height: 40px;
-            color: #fff;
             text-transform: uppercase;
             transition: all .5s;
             cursor: pointer;
             white-space: nowrap;
             overflow: hidden;
-        }
-
-        a {
-            color: #fff;
         }
     }
 
@@ -91,6 +85,7 @@ $margin-left: 30px;
         &__item {
             padding-left: $margin-left - 3px;
             border-left: 3px solid transparent;
+            color: #fff;
 
             label {
                 cursor: pointer;
@@ -117,6 +112,10 @@ $margin-left: 30px;
                     color: $subfont-color;
                 }
             }
+        }
+
+        a {
+            color: #fff;
         }
 
         /* submenu collapsing styles */
@@ -155,6 +154,7 @@ $margin-left: 30px;
             margin-left: -$margin-left;
             padding-left: calc($margin-left * 2 - 3px);
             transition: all .5s;
+            color: $subfont-color;
             border-left: 3px solid transparent;
             display: flex;
             align-items: center;
@@ -194,7 +194,6 @@ $margin-left: 30px;
     .aside__newsletter {
         padding: $margin-left;
         width: calc(100% - $margin-left * 2);
-        color: #fff;
         position: absolute;
         bottom: 0;
 
