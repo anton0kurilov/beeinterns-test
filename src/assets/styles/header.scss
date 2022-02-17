@@ -11,6 +11,10 @@ $margin-leftright: 0 55px;
 
     &__container {
         margin: $margin-leftright;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: auto;
     }
 
     &__mainmenu {
@@ -20,6 +24,19 @@ $margin-leftright: 0 55px;
 
         &-item {
             list-style: none;
+            color: rgba(225, 225, 225, .5);
+            padding: 0 25px 0 0;
+            transition: all .5s;
+
+            &:hover {
+                color: rgba(225, 225, 225, .8);
+            }
+        }
+
+        .divider {
+            width: 1px;
+            height: 24px;
+            background-color: #d8d8d8;
         }
     }
 }
