@@ -21,6 +21,12 @@ $margin-leftright: 0 55px;
         height: auto;
     }
 
+    &__subcontainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &__mainmenu {
         margin: 0;
         padding: 0;
@@ -58,7 +64,7 @@ $margin-leftright: 0 55px;
             height: 24px;
             line-height: 24px;
             margin: 0 10px 0 0;
-            color: white;
+            color: #fff;
             cursor: default;
             border-radius: 5px;
             transition: all .5s;
@@ -73,6 +79,37 @@ $margin-leftright: 0 55px;
                 background-color: #FF4738;
                 margin: -2px 10px 0 0;
                 vertical-align: middle;
+            }
+        }
+    }
+
+    &__profile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &-photo {
+            width: 44px;
+            height: 44px;
+            margin: 0 15px 0 0;
+        }
+
+        &-info {
+            &-name {
+                color: #fff;
+            }
+
+            &-status {
+                margin: 5px 0 0 0;
+                font-size: 13px;
+
+                &.online {
+                    color: #24cb8d;
+                }
+
+                &.offline {
+                    color: #FF4738;
+                }
             }
         }
     }
