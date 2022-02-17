@@ -1,4 +1,6 @@
-header.header {
+$margin-leftright: 0 55px;
+
+.header {
     width: 100%;
     height: $header-height;
     top: 0;
@@ -6,4 +8,18 @@ header.header {
     right: 0;
     position: fixed;
     border-bottom: 1px solid rgba(216, 216, 216, .1);
+
+    &__container {
+        margin: $margin-leftright;
+    }
+
+    &__mainmenu {
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        &-item {
+            list-style: none;
+        }
+    }
 }
