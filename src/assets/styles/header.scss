@@ -130,6 +130,8 @@ $margin-leftright: 0 55px;
                     display: inline-block;
                     border-radius: 50%;
                     margin: 0 5px 2px 0;
+                    animation: pulsate 2s ease-out;
+                    animation-iteration-count: infinite;
 
                     &.online {
                         background-color: #24cb8d;
