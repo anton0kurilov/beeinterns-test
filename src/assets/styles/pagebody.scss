@@ -1,3 +1,13 @@
+@mixin button {
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    background-color: $accent-color-purple;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+}
+
 .pagebody {
     position: absolute;
     width: calc(100% - $aside-width - $margin-leftright * 2);
@@ -34,15 +44,9 @@
                 display: flex;
 
                 &-button {
-                    height: 30px;
-                    line-height: 30px;
+                    @include button;
                     padding: 0 13px;
-                    cursor: pointer;
-                    background-color: $accent-color-purple;
-                    border: 0;
-                    border-radius: 4px;
                     font-size: 12px;
-                    color: #fff;
                 }
 
                 &-paginator {
@@ -127,15 +131,9 @@
                     }
 
                     &-button {
-                        height: 30px;
-                        line-height: 30px;
+                        @include button;
                         padding: 0 18px;
-                        cursor: pointer;
-                        background-color: $accent-color-purple;
-                        border: 0;
-                        border-radius: 4px;
                         font-size: 13px;
-                        color: #fff;
                     }
                 }
             }
