@@ -12,7 +12,8 @@ $subfont-color: #778090;
 @import "pagebody";
 
 
-* {
+*,
+*:focus {
     -webkit-tap-highlight-color: transparent;
 }
 
