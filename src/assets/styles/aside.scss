@@ -104,12 +104,10 @@ $margin-left: 30px;
             &:hover {
                 background-color: #383a4a;
                 border-left: 3px solid $accent-color-purple;
-                color: #fff;
 
-                &>ul.submenu>a>li.submenu__item {
+                & .submenu__item {
                     background-color: $submain-background;
-                    border-left: 3px solid transparent;
-                    color: $subfont-color;
+                    border-left: 3px solid $submain-background;
                 }
             }
         }
@@ -155,7 +153,7 @@ $margin-left: 30px;
             padding-left: calc($margin-left * 2 - 3px);
             transition: all .5s;
             color: $subfont-color;
-            border-left: 3px solid transparent;
+            border-left: 3px solid $submain-background;
             display: flex;
             align-items: center;
 
@@ -173,7 +171,11 @@ $margin-left: 30px;
             &:hover {
                 color: #fff;
 
-                &>object.submenu__item-icon {}
+                &>.submenu>a>.submenu__item {
+                    background-color: $submain-background;
+                    border-left: 3px solid $submain-background;
+                    color: $subfont-color;
+                }
             }
 
             a {
