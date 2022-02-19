@@ -1,6 +1,81 @@
 .pagebody {
     position: absolute;
+    width: calc(100% - $aside-width - $margin-leftright * 2);
     top: $header-height;
     left: $aside-width;
     margin: 40px $margin-leftright;
+
+    .course__level {
+        margin: 0 0 60px 0;
+
+        &-header {
+            margin: 0 0 25px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            &-subtitle {
+                font-size: 11px;
+                font-weight: 400;
+                color: rgba(255, 255, 255, .4);
+                text-transform: uppercase;
+                margin: 0 0 7px 0;
+            }
+
+            &-title {
+                font-size: 22px;
+                font-weight: 400;
+                color: #fff;
+                text-transform: uppercase;
+                margin: 7px 0 0 0;
+            }
+
+            &-navigation {
+                display: flex;
+
+                &-button {
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 13px;
+                    cursor: pointer;
+                    background-color: $accent-color-purple;
+                    border: 0;
+                    border-radius: 4px;
+                    font-size: 12px;
+                    color: #fff;
+                }
+
+                &-paginator {
+                    margin: 0 0 0 10px;
+                    display: flex;
+                    align-items: center;
+
+                    &-item {
+                        width: 30px;
+                        height: 30px;
+                        line-height: 24px;
+                        box-sizing: border-box;
+                        text-align: center;
+                        background-color: transparent;
+                        border: 1px solid rgba(255, 255, 255, .15);
+                        border-radius: 4px;
+                        cursor: pointer;
+
+                        &:first-child {
+                            margin: 0 5px 0 0;
+                        }
+
+                        &.left {
+                            transform: rotate(270deg);
+                        }
+
+                        &.right {
+                            transform: rotate(90deg);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 }
