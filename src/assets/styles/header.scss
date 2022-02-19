@@ -18,7 +18,7 @@ $margin-leftright: 55px;
     z-index: 999;
     @include loading;
     animation-duration: .7s;
-    animation-delay: .1s;
+    animation-delay: .25s;
 
     &__container {
         margin: 0 $margin-leftright;
