@@ -6,6 +6,11 @@
     border: 0;
     border-radius: 4px;
     color: #fff;
+    transition: all .5s;
+
+    &:hover {
+        background-color: #6B69F9;
+    }
 }
 
 .pagebody {
