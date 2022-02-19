@@ -159,6 +159,16 @@ $margin-left: 30px;
             display: flex;
             align-items: center;
 
+            &-icon {
+                width: 18px;
+                height: 20px;
+                margin-right: 25px;
+                display: inline-block;
+                background-position: center center;
+                background-size: 15px 18px;
+                background-size: cover;
+            }
+
             .this,
             &:hover {
                 color: #fff;
@@ -169,17 +179,6 @@ $margin-left: 30px;
             a {
                 color: $subfont-color;
             }
-
-            .submenu__item-icon {
-                width: 18px;
-                height: 20px;
-                margin-right: 25px;
-                display: inline-block;
-                background-position: center center;
-                background-size: 15px 18px;
-                background-size: cover;
-            }
-
 
             .this,
             &:hover {

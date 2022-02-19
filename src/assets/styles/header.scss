@@ -1,4 +1,4 @@
-$margin-leftright: 0 55px;
+$margin-leftright: 55px;
 
 .header {
     width: 100%;
@@ -10,7 +10,7 @@ $margin-leftright: 0 55px;
     border-bottom: 1px solid rgba(216, 216, 216, .1);
 
     &__container {
-        margin: $margin-leftright;
+        margin: 0 $margin-leftright;
         position: absolute;
         display: flex;
         justify-content: space-between;
@@ -47,6 +47,7 @@ $margin-leftright: 0 55px;
         .divider {
             width: 1px;
             height: 24px;
+            margin: 0 0 0 calc($margin-leftright - 25px);
             background-color: #d8d8d8;
         }
     }
