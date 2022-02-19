@@ -13,6 +13,12 @@
     }
 }
 
+@mixin loading {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+}
+
 .pagebody {
     z-index: 1;
     position: absolute;
@@ -20,6 +26,9 @@
     top: $header-height;
     left: $aside-width;
     margin: 40px $margin-leftright;
+    @include loading;
+    animation-duration: .7s;
+    animation-delay: .8s;
 
     .course__level {
         margin: 0 0 60px 0;

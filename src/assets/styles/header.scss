@@ -1,5 +1,11 @@
 $margin-leftright: 55px;
 
+@mixin loading {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+}
+
 .header {
     width: 100%;
     height: $header-height;
@@ -10,6 +16,9 @@ $margin-leftright: 55px;
     border-bottom: 1px solid rgba(216, 216, 216, .1);
     background-color: $main-background;
     z-index: 999;
+    @include loading;
+    animation-duration: .7s;
+    animation-delay: .1s;
 
     &__container {
         margin: 0 $margin-leftright;

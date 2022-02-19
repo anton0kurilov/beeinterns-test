@@ -22,11 +22,6 @@ body {
     margin: 0;
     font-family: 'Jost', 'Helvetica', 'Arial', sans-serif;
     background-color: $main-background;
-    opacity: 0;
-    animation: fadeIn ease-in 1;
-    animation-fill-mode: forwards;
-    animation-duration: .7s;
-    animation-delay: .3s;
 }
 
 a {
