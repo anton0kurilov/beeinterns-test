@@ -6,4 +6,4 @@
 * Parcel
 * Git
 
-**Превью: [beeinterns-test.vercel.app](https://beeinterns-test.vercel.app/)**
+**Превью (by Vercel): [beeinterns-test.vercel.app](https://beeinterns-test.vercel.app/)**
