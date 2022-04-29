@@ -9,7 +9,7 @@ for (let i = 0; i < getCourseTitles.length; i++) { // запуск цикла с
 
 // HW N5.2
 
-let getCourseSubTitles = document.querySelectorAll('#pro-level .course__level-body-item-name-subtitle'); // извлечение массива HTML-элементов с классом .course__level-body-item-name-subtitle внутри элемента #pro-level
+let getCourseSubTitles = document.querySelectorAll('#basic-level .course__level-body-item-name-subtitle'); // извлечение массива HTML-элементов с классом .course__level-body-item-name-subtitle внутри элемента #pro-level
 for (let j = 0; j < getCourseSubTitles.length; j++) { // запуск цикла с числом повторов, равному длине массива
     if (getCourseSubTitles[j].textContent.length > 19) { // если число символов в текущем значении массива больше 19,...
         getCourseSubTitles[j].textContent = getCourseSubTitles[j].textContent.slice(0, 20) + '...'; // ... то вернуть первые 20 символов исходной строки вместе с многоточием
