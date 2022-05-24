@@ -96,12 +96,11 @@ $margin-left: 30px;
             border-left: 3px solid transparent;
             color: #fff;
 
-            label {
-                cursor: pointer;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
+			&-title {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
 
             &-arrow {
                 margin-right: $margin-left;
@@ -128,36 +127,20 @@ $margin-left: 30px;
 
         /* submenu collapsing styles */
 
-        input#submenu__programs,
-        input#submenu__lections {
-            display: none;
-        }
+		.submenu {
+            max-height: 0;
+			transition: max-height .5s ease-out;
+		}
 
-        ul#submenu__programs,
-        ul#submenu__lections {
-            visibility: hidden;
-            height: 0;
-            opacity: 0;
-            transition: visibility 0s, opacity .5s linear;
-        }
-
-        input#submenu__programs:checked~ul#submenu__programs,
-        input#submenu__lections:checked~ul#submenu__lections {
-            visibility: visible;
-            height: auto;
-            opacity: 1;
-        }
-
-        input#submenu__programs:checked~label .mainmenu__item-arrow,
-        input#submenu__lections:checked~label .mainmenu__item-arrow {
-            transform: rotate(0deg);
-        }
+		.submenu.active {
+            max-height: 1000px;
+		}
 
         /* submenu collapsing styles end */
     }
 
     .submenu {
-
+		
         .submenu__item {
             margin-left: -$margin-left;
             padding-left: calc($margin-left * 2 - 3px);
@@ -200,7 +183,6 @@ $margin-left: 30px;
             }
         }
     }
-
 
     .aside__newsletter {
         padding: $margin-left;
