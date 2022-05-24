@@ -1,6 +1,6 @@
 'use strict';
 
-function menuAccordion(menuType, option) {
+function menuAccordion(menuType) {
 	const elementMenuContent = document.getElementById('submenu__' + menuType);
 	const elementMenuHeader = document.getElementById('mainmenu__' + menuType + '-item');
 	const elementMenuArrow = document.getElementById('mainmenu__' + menuType + '-arrow');
@@ -16,5 +16,5 @@ function menuAccordion(menuType, option) {
 	})
 }
 
-menuAccordion('programs', true);
-menuAccordion('lections', true);
+menuAccordion('programs');
+menuAccordion('lections');
