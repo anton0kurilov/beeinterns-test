@@ -10,7 +10,7 @@ window.onload = function findCourses() {
     allCoursesBlock.innerHTML = '';
 
     coursesArray.forEach(function summarizeCourses(item) {
-        allCoursesBlock.innerHTML += '<div class="course__level-body-item">' + item.innerHTML + '</div>';
+        allCoursesBlock.innerHTML += item.outerHTML;
     });
 
     numberOfCourses.append(coursesArray.length + ' ' + plural(coursesArray.length, 'лекция', 'лекции', 'лекций'));
