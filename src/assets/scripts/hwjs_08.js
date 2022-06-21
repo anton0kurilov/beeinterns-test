@@ -1,6 +1,6 @@
 'use strict';
 
-const plural = require('plural-ru');
+import plural from 'plural-ru';
 
 window.onload = function findCourses() {
     const coursesArray = document.querySelectorAll('.course__level-body-item');
@@ -9,10 +9,11 @@ window.onload = function findCourses() {
 
     allCoursesBlock.innerHTML = '';
 
-    coursesArray.forEach(function summarizeCourses(item) {
+    coursesArray.forEach(function summarizeCourses(item, i) {
+        item.classList.add('item-' + i);
         allCoursesBlock.innerHTML += item.outerHTML;
     });
 
     numberOfCourses.append(coursesArray.length + ' ' + plural(coursesArray.length, 'лекция', 'лекции', 'лекций'));
-}
+};
 
